@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+#main_screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+#roof{
+    position: fixed;
+    width: 100%;
+    height: 60%;
+    transform: translateY(-60%);
+    background-color: black;
+    border-radius: 0 0 65% 65%;
+    z-index: 2;
+}
+
+#footer{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    transform: translateY(530%);
+    background-color: black;
+    border-radius: 65% 65% 0 0;
+}
+
+#logo {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-40%);
+    text-align: center;
+    font-family: Dancing Script, cursive;
+    color: white;
+    font-size: 100px
+
+}
+
+div.gallery {
+    background-color: white;
+    transition-duration: 0.7s;
+}
+
+div.gallery:hover {
+    cursor: pointer;
+    transition-duration: 0.7s;
+}
+
+
+div.gallery img {
+    transition-duration: 1s;
+    opacity: 1;
+    width: 100%;
+    height: 260px;
+}
+
+div.gallery img:hover {
+    opacity: 0.2;
+    transition-duration: 1s;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 15px;
+    float: left;
+    width: 24.99999%;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main_gallery {
+    position: absolute;
+    left: 0;
+    top: 110%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.cutout_text {
+    background-color: antiquewhite;
+    color: black;
+    font-size: 80px; /* Responsive font size */
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    width: 100%;
+    height: 10%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 95%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+
+}
+
+.cutout_2 {
+    background-color: antiquewhite;
+    color: black;
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+
+.navbar a:first-of-type {
+    color: white;
+}
+
+.navbar a:last-of-type {
+    color: white;
+}
+
+.active {
+    color: mediumpurple;
+}
+
+.navbar {
+    background-color: black;
+    z-index: 3;
+    width: 25%;
+    position: fixed;
+    left: 37.5%;
+    top: 15px;
+}
+
+
+.navbar a {
+    width: 33%;
+    float: left;
+    text-align: center;
+    background-color: black;
+    transition-duration: 0.7s;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    color: mediumpurple;
+    transition-duration: 0.7s;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(43,198,196);
+    background: linear-gradient(180deg, rgba(43,198,196,1) 0%, rgba(205,0,255,1) 100%);
+    border-radius: 30px;
+    width: 1500px;
+    height: 800px;
+    z-index: 3;
+    box-shadow: 0px 0px 50px 30px rgba(0, 0, 0, 1);
+
+}
+
+.closeModal {
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right;
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 30px;
+    transition-duration: 0.7s;
+    border-style: none;
+    box-shadow: 0px 0px 35px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.closeModal:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    transition-duration: 0.7s;
+}
+
+.modal_img {
+    position: absolute;
+    border-radius: 30px;
+    height: 700px;
+    width: 700px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    box-shadow: 0px 0px 35px 20px rgba(0, 0, 0, 0.6);
+
+}
+
+.text_field {
+    height: 800px;
+    width: 750px;
+    position: absolute;
+    left: 50%;
+    z-index: -1;
+}
+
+.text_field p{
+    font-family: "Old English Text MT", cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.text {
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    margin: 30px;
+    text-align: center;
+}
+
+.wiki {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    transition-duration: 0.7s;
+    text-decoration: none;
+    box-shadow: 0px 0px 35px 10px rgba(0, 0, 0, 0.5);
+}
+
+.wiki:hover {
+    background-color: blueviolet;
+    color: white;
+    transition-duration: 0.7s;
+}

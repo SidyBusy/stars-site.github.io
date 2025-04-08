@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("https://wallpapercat.com/w/full/8/7/7/194290-3840x2160-desktop-4k-outer-space-wallpaper-photo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+
+#logo {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-40%);
+    text-align: center;
+    font-family: Dancing Script, cursive;
+    color: white;
+    font-size: 100px;
+    z-index: -2;
+
+}
+
+#bookmark {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-family: inherit;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    z-index: -2;
+
+}
+
+
+#footer{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    transform: translateY(350%);
+    background-color: black;
+    border-radius: 65% 65% 0 0;
+}
+
+#roof{
+    position: fixed;
+    transform: translateY(-60%);
+    width: 100%;
+    height: 60%;
+    background-color: black;
+    border-radius: 0 0 65% 65%;
+    z-index: -1;
+}
+
+#contact {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    font-size: 30px;
+    font-family: inherit;
+    color: white;
+}
+
+#tg {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    font-size: 40px;
+    font-family: inherit;
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    top: 15px;
+    left: 35%;
+    width: 30%;
+    background-color: black;
+    overflow: auto;
+}
+
+.navbar a {
+    float: left;
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%;
+    text-align: center;
+    transition-duration: 0.7s;
+}
+
+.navbar a:not(:first-of-type) {
+    color: white;
+}
+
+.navbar a:hover {
+    color: mediumpurple;
+    transition-duration: 0.7s;
+}
+
+.cutout_text {
+    background-color: antiquewhite;
+    color: black;
+    font-size: 80px; /* Responsive font size */
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    width: 100%;
+    height: 10%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 95%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+    z-index: -2;
+}
+
+
+.card {
+    /* Add shadows to create the "card" effect */
+    width: 20%;
+    height: inherit;
+    background: rgb(193,116,251);
+    background: linear-gradient(180deg, rgba(193,116,251,1) 0%, rgba(19,19,156,1) 100%);
+    transition: transform 0.7s;
+    margin: 1%;
+    float: left;
+
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Add some padding inside the card container */
+.container {
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+}
+
+.menu {
+    width: 100%;
+    position: absolute;
+    left: 17%;
+    top: 120%;
+    z-index: -2;
+}
+
+.active {
+    color: mediumpurple;
+}

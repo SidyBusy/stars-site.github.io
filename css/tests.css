@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+#main_screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+#roof{
+    position: fixed;
+    width: 100%;
+    height: 60%;
+    transform: translateY(-60%);
+    background-color: black;
+    border-radius: 0 0 65% 65%;
+    z-index: 2;
+}
+
+#footer{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    transform: translateY(330%);
+    background-color: black;
+    border-radius: 65% 65% 0 0;
+}
+
+#logo {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-40%);
+    text-align: center;
+    font-family: Dancing Script, cursive;
+    color: white;
+    font-size: 100px
+
+}
+
+div.gallery {
+    background: rgb(69,211,231);
+    background: linear-gradient(180deg, rgba(69,211,231,1) 0%, rgba(23,21,152,1) 100%);
+    transition: transform 0.6s;
+}
+
+div.gallery:hover {
+    transform: scale(1.03);
+}
+
+div.gallery img {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 20px;
+    float: left;
+    width: 33.333%;
+}
+
+.responsive:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main_gallery {
+    width: 70%;
+    left: 15%;
+    position: absolute;
+    top: 120%;
+}
+
+.cutout_text {
+    background-color: antiquewhite;
+    color: black;
+    font-size: 80px; /* Responsive font size */
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    width: 100%;
+    height: 10%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 95%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+
+}
+
+.navbar a:not(:last-of-type) {
+    color: white;
+}
+
+.navbar a:last-of-type {
+    color: mediumpurple;
+}
+
+.navbar {
+    background-color: black;
+    z-index: 3;
+    width: 25%;
+    position: fixed;
+    left: 37.5%;
+    top: 15px;
+}
+
+
+.navbar a {
+    width: 33%;
+    float: left;
+    text-align: center;
+    background-color: black;
+    transition-duration: 0.7s;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    color: mediumpurple;
+    transition-duration: 0.7s;
+    cursor: pointer;
+}
